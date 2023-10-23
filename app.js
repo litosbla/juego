@@ -23,7 +23,7 @@ toggle.addEventListener("click", ()=>{
 })
 
 slides.forEach(slide => {
-    const texto = slide.querySelector('.carousel-text').textContent;
+    const texto = slide.querySelector('.carousel-text').textContent.toLowerCase();
     slide.addEventListener("click",()=>{
         window.open(`perfil-p.html?nombre=${texto}`);
     })
@@ -31,7 +31,7 @@ slides.forEach(slide => {
 });
 
 cajas.forEach(caja => {
-    const texto = slide.querySelector('.carousel-text').textContent;
+    const texto = caja.querySelector('.title').textContent.toLowerCase();
     caja.addEventListener("click",()=>{
         window.open(`perfil-p.html?nombre=${texto}`);
     })
