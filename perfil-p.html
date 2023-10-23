@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> pagina de juegooosss </title>
+    <link rel="stylesheet" href="perfil-producto/perfil-p.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body> 
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="assets/seta.png" alt="logo">
+                </span>
+
+                <div class="text header-text">
+                    <span class="name">Nombredeljuego</span>
+                    <span class="profession">player</span>
+
+                </div>
+            </div>
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+        <div class="menu-bar">
+            <div class="menu">
+                <li class="search-box">
+                    
+                    <i class='bx bx-search  icon'></i>
+                    <input type="search" placeholder="Buscar">
+                    
+                </li>
+                <ul class="menu-links">
+                    <li class="nav-links">
+                        <a href="#">
+                            <i class='bx bx-user icon'></i>
+                            <span class="text nav-text">Perfil</span>
+                        </a>
+                    </li>
+                    <li class="nav-links">
+                        <a href="#">
+                            <i class='bx bx-shopping-bag icon' ></i>
+                            <span class="text nav-text">Tienda</span>
+                        </a>
+                    </li>
+                    <li class="nav-links">
+                        <a href="#">
+                            <i class='bx bx-library icon' ></i>
+                            <span class="text nav-text">Biblioteca</span>
+                        </a>
+                    </li>
+                    <li class="nav-links">
+                        <a href="#">
+                            <i class='bx bx-news icon' ></i>
+                            <span class="text nav-text">Noticias</span>
+                        </a>
+                    </li>
+                    
+                    
+                    
+                </ul>
+            </div>
+            <div class="bottom-content">
+                <li class="nav-links">
+                    <a href="#">
+                        <i class='bx bx-log-out icon'></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li>
+                <li class="mode">
+                    <div class="moon-sun">
+                        <i class="bx bx-moon icon moon"></i>
+                        <i class="bx bx-sun icon sun"></i>
+                    </div>
+                    <span class="mode-text text">Dark Mode</span>
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+            </div>
+        </div>
+    </nav>
+    <div class="popup" id="popup">
+        <div class="btnlog">
+            <button onclick="MostrarSignIn()">Sign in</button>
+            <button onclick="MostrarSignUp()">Sign up</button>
+        </div>
+        <div class="opciones">
+            
+            <div class="input-icon">
+                <i class='bx bx-user'></i>
+                <input type="text" class="nombreInput">
+            </div>
+            <div class="input-icon">
+                <i class='bx bx-envelope' ></i>
+                <input type="email" class="nombreInput">
+            </div>
+            <div class="input-icon">
+                <i class='bx bx-lock-alt' ></i>
+                <input type="password" class="nombreInput">
+            </div>
+
+            <span class="log-title">Sign in</span>
+            
+        </div>
+        
+    </div>
+    <div class="overlay" onclick="closepopup()"></div>
+    <!-- aki empieza lo chido-->
+    <section class="home">
+        <div class="action">
+            <div class="container-registro">
+                
+                <div class="mid1">
+                    <img src="assets/aje.png" alt="">
+                </div>
+                <div class="mid2">
+                    <span class="texto-al-secundario">Ajedrez</span>
+                    <div class="contenedor-descripcion">
+                        <span class="texto-descipcion-juego">
+
+                            El ajedrez es un juego de estrategia para dos jugadores que se juega en un tablero de 8x8 casillas. Cada jugador comienza la partida con 16 piezas: un rey, una dama, dos alfiles, dos caballos, dos torres y ocho peones. El objetivo del juego es dar jaque mate al rey del oponente. Esto se logra amenazando la casilla donde está el rey del oponente de tal manera que no pueda escapar de la amenaza.
+                            
+                            Cada pieza se mueve de forma distinta en el tablero. Los peones solo pueden mover una casilla hacia adelante, pero capturan en diagonal. Las torres se mueven en línea recta horizontal y verticalmente. Los alfiles se mueven en diagonales. La dama se mueve en cualquier dirección horizontal, vertical y diagonal. Los caballos se mueven en una "L". El rey puede mover una casilla en cualquier dirección.
+                            
+                            Los jugadores se turnan moviendo una pieza por turno. Las piezas se capturan removiéndolas del tablero cuando un oponente mueve una pieza a una casilla ocupada por una pieza del otro. El juego termina cuando se da jaque mate, cuando un jugador se rinde o cuando se declara tablas.
+                            
+                            El ajedrez es un juego muy estratégico y competitivo que requiere concentración, creatividad y habilidad analítica. Ha sido popular por siglos en muchas culturas del mundo.
+                        </span>
+                    </div>
+                    <div class="contenedor-btn">
+                        <button class="registrarBtn">Comprar</button>
+                        <p class="contenedor-precio">$ <span class="precio">Ajedrez</span></p>
+                        <div class="estrellas">
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+        </div>
+        <div class="text-titulo">Más fotos</div>
+        
+        <div class="spawn-bib">
+            <div class="caja">
+                <div class="cuadro" id="img1">
+                    <img src="assets/angry.jpg" >
+                </div>
+                
+            </div>
+            <div class="caja">
+                <div class="cuadro" id="img2">
+                    <img src="assets/asasins.jpg" >
+                </div>
+            </div>
+            <div class="caja" id="img3">
+                <div class="cuadro">
+                    <img src="assets/asasins.jpg" >
+                </div>
+            </div>
+            
+        </div>
+        
+
+    </section>
+
+    <script src="perfil-producto/perfil-p.js"></script>
+    
+</body>
+</html>
